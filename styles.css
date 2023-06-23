@@ -1,0 +1,85 @@
+/* this is the css code written by Krushna Chandra Nayak */
+*{
+	box-sizing: border-box;
+}
+
+html {
+    padding-top:50px;
+}
+
+
+
+body {
+    border: 8px solid rgb(23, 228, 228);
+    border-radius:30%;
+    padding: 40px;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    background: url('https://cdn.wallpapersafari.com/28/9/NJFPqf.jpg');
+}
+
+#clock {
+    height:120px;
+    font-size: 40px;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(211, 13, 13);
+}
+
+h2 {
+	text-align:center;
+  
+
+}
+h3{
+    font-size: 20px;
+    color: crimson;
+}
+
+#alarm-container {
+	text-align:center;
+    font-family: Verdana;
+    font-size: 0.6em;
+    padding: 0.7em;
+    color: white;
+}
+
+label {
+	display:inline-block;
+}
+
+.timeofday {
+    background-color: #eee;
+}
+
+.bigger {
+    font-weight:bold;
+    font-size: 18px;
+}
+
+#sounds {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#setButton {
+    float:left;
+    background-color:lightgreen;
+    margin-top:10px;
+    border-radius: 10%;
+    border-color: lightgreen;
+}
+#clearButton {
+    float:right;
+    background-color:red;
+    margin-top:10px;
+    border-radius: 10%;
+    border-color: red;
+}
+
+
+
