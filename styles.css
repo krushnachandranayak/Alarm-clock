@@ -19,6 +19,14 @@ body {
     background: url('https://cdn.wallpapersafari.com/28/9/NJFPqf.jpg');
 }
 
+#main-container{
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: brown;
+}
+
 #clock {
     height:120px;
     font-size: 40px;
