@@ -15,15 +15,25 @@ var currentTime = setInterval(function(){
 	var minutes = date.getMinutes();
 	
 	var seconds = date.getSeconds();
-	
-	var ampm = (date.getHours()) < 12 ? 'AM' : 'PM';
 
+	var ampm="AM";
+
+	if(hours == 0){
+		hours = 12;
+	}
+	if(hours > 12){
+		hours= hours - 12;
+		ampm = "PM"
+	}
+	hours = (hours < 10) ? + hours:hours;
+	minutes = (minutes < 10) ? minutes:minutes;
+	seconds = (seconds < 10) ? seconds:seconds;
 
 	//convert military time to standard time
 
 	if (hours < 0) {
 		hours = hours * -1;
-	} else if (hours == 0o0) {
+	} else if (hours == 00) {
 		hours = 12;
 	} else {
 		hours = hours;
@@ -121,15 +131,25 @@ setInterval(function(){
 	var minutes = date.getMinutes();
 	
 	var seconds = date.getSeconds();
+
+	var ampm="AM";
+
+	if(hours == 0){
+		hours = 12;
+	}
+	if(hours > 12){
+		hours= hours - 12;
+		ampm = "PM"
+	}
+	hours = (hours < 10) ? + hours:hours;
+	minutes = (minutes < 10) ? minutes:minutes;
+	seconds = (seconds < 10) ? seconds:seconds;
 	
-	var ampm = (date.getHours()) < 12 ? 'AM' : 'PM';
-
-
 	//convert military time to standard time
 
 	if (hours < 0) {
 		hours = hours * -1;
-	} else if (hours == 0o0) {
+	} else if (hours == 00) {
 		hours = 12;
 	} else {
 		hours = hours;
